@@ -1,0 +1,83 @@
+.contenedor_grid {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 1.5rem;
+    padding: 5rem;
+
+}
+
+.grid_items {
+    box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+    background-size: cover;
+    grid-row-start: span 2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.grid_items .background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.grid_items:hover p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    text-align: left;
+    align-content: center;
+    color:#21b8cc;
+    background-color: rgba(236, 236, 236, 0.5);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.grid_items:first-child {
+    grid-column-start: span 2;
+}
+
+.grid_items:first-child .background {
+    background-image: url(../img/educacion1.jpg);
+}
+
+.grid_items:hover {
+    scale: 105%;
+}
+
+.grid_items:nth-child(2) {
+    grid-row-start: span 2;
+}
+
+.grid_items:nth-child(2) .background {
+    background-image: url(../img/educacion2.jpg);
+}
+
+.grid_items:nth-child(3) {
+    grid-row-start: span 1;
+}
+
+.grid_items:nth-child(3) .background {
+    background-image: url(../img/educacion3.jpg);
+}
+
+.grid_items:nth-child(4) {
+    grid-row: span 1;
+}
+
+.grid_items:nth-child(4) .background {
+    background-image: url(../img/educacion4.jpg);
+}
+
+.grid_items:nth-child(5) {
+    grid-row: span 1;
+}
+
+.grid_items:nth-child(5) .background {
+    background-image: url(../img/educacion5.svg);
+}

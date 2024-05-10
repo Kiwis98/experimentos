@@ -1,5 +1,4 @@
 .contenedor_grid {
-
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -14,50 +13,62 @@
     background-size: cover;
     grid-row-start: span 2;
     border-radius: 20px;
+    overflow: hidden;
+}
+
+.grid_items:hover p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    align-content: center;
+    color: red;
+    margin: 0;
 }
 
 .grid_items:first-child {
-    background-image: url(../img/educacion1.jpg);
     grid-column-start: span 2;
-    position: relative;
 }
 
-.grid_items:first-child:hover {
+.grid_items:first-child .background {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/educacion1.jpg);
+}
+
+.grid_items:hover {
     scale: 105%;
-    background-image: url(../img/educacion1_hover.png);
 }
 
 .grid_items:nth-child(2) {
-    background-image: url(../img/educacion2.jpg);
     grid-row-start: span 2;
 }
 
-.grid_items:nth-child(2):hover {
-    scale: 105%;
-    background-image: url(../img/educacion2_hover.png);
+.grid_items:nth-child(2) img {
+    height: 100%;
 }
 
 .grid_items:nth-child(3) {
-    background-image: url(../img/educacion3.jpg);
+    grid-row-start: span 1;
 }
 
-.grid_items:nth-child(3):hover {
-    scale: 105%;
-    background-image: url(../img/ejemplo1.png);
+.grid_items:nth-child(3) img {
+    width: 100%;
 }
 
 .grid_items:nth-child(4) {
-    background-image: url(../img/educacion4.jpg);
+    grid-row: span 1;
 }
-.grid_items:nth-child(4):hover {
-    scale: 105%;
-    background-image: url(../img/ejemplo1.png);
+
+.grid_items:nth-child(4) img {
+    width: 100%;
 }
 
 .grid_items:nth-child(5) {
-    background-image: url(../img/educacion5.svg);
+    grid-row: span 1;
 }
-.grid_items:nth-child(5):hover {
-    scale: 105%;
-    background-image: url(../img/ejemplo1.png);
+
+.grid_items:nth-child(5) img {
+    width: 100%;
 }
